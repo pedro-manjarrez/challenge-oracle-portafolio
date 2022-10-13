@@ -1,0 +1,224 @@
+header{
+    background-color: #92b2e2;
+    padding: 20px;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{/* capturacion del movimiento*/
+    color: #A00404;
+    text-decoration: underline;/*subrayado*/
+}
+
+.productos {
+    width: 940px; /* Se estima el ancho debido al tamaño patron de pantalla monitor cuando es 1280*/
+    margin: 0 auto; /* se establece un margen superior de 0, para losrestantes derecha,abajo e izquierda sera automatico*/
+    padding: 50px; /*Espaciamiento de los elementos de lista*/
+}
+
+
+.productos li{  /* abarca todos los elementos de la lista*/
+    display: inline-block; /*Poner los elementos en linea horizontal*/
+    text-align: center;
+    width: 40%; /* cada elemento ocupe el 30%, 10% restante se distribuira*/
+    vertical-align: top;
+    /*background: #CCCCCC; E$ste backgroud fue como referenci apara centrar elementos*/
+    margin: 0 1.5%;/* Un margen de 0 en la vertical y 1.5 en los laterales*/
+    padding: 3px 20px;/* espaciamiento interno de elementos, con 30px en vertical y 20px horizontal*/
+    box-sizing: border-box;/* se ajustara al espacio asignado*/
+    /*Estas tres lineas siguientes se puede reemplzar con una sola linea, solo border
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    Solo la palabra border, iniciando con el ancho o grosor, el estilo y por ultimo el color*/
+    border: 2px solid black;
+    /* los bordes-radios se puede hacer en una sola linea
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px;*/
+    /*border-radius: 10px 20px 30px 40px;  definiendo el primero superior izquierdo, superior derecho
+    inferior derecho e inferior izquierdo (sentido de las manecillas del reloj*/
+    border-radius: 10px; /* una solaconfiguiracion para los 4 bordes*/
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+    
+}
+
+.productos li:active{/*Cuando el usuario da click con el boton derecho del mouse*/
+    border-color: #088c19;
+}
+
+
+.productos h2{
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 30px;/* Cambio del tamaño del titulo cuando se pasa el mouse*/
+}
+
+.personal-descripcion, .personal-desc{
+    font-size: 30px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(img/fondoguinda.jpg);/*poner una imagen como fondo*/
+    padding: 40px;
+}
+
+.jpmp{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;/* espacio 40 para arriba y para abajo y 0 para los costados */
+}
+
+/*Se incluira el form p, para modificar el parrafo de "¿Como le gustaria que loo contactemos?"*/
+/*Se cambio la etiqueta "p" por la de legenda relñacionada con la etiqueta fileset*/
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;/*  0 para arriba, 0 pla derecha y abajo 10px*/
+}
+
+/*Con la sepacion de la coma, se aplicar los estilos para varios selectores "form input, form textarea"*/
+/*Debido a que hay incongruencia en la alinaeacion dispareja de radios y descripcion, por el display:block*/
+/*Se creara una class="input-padron" (contacto.html) para solo aplicar el estilo a esta clase*/
+/*Solo aplicara a la clase class="input-padron" por lo que se cambiara el nombre "form input, form textarea"*/
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;/*10 para superior e inferior y 25 para los costado*/
+    width: 50%;/*Ocupe el 50 % de los 940px*/
+}
+
+.checbox{
+    margin: 20px 0;
+}
+
+/*
+NOTA: los valores en cuestión de peso o jerarquía cuando se trata de aplicar el estilo a un elemento en html
+Prioridad de mayor a menor
+Inline (aplicar el estilo directo en la línea y archivo de  html), con predominio sobre los demás
+El identificador ID
+La clase
+La etiqueta
+*/
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;    
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(66, 156, 216);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+
+.enviar:hover{
+    background: rgb(40, 92, 202);
+    transform: scale(1.2); /*Aumento del elemento en proporcion*/
+    /*transform: rotate(70deg);/*Realiza la rotacion del elemento*/
+    /*transform: scale(3) rotate(890deg); aqui aplica las 2 propiedades*/
+}
+
+/*Agrego a partir de aqui*/
+.aptitudes{
+    background: #787b809d;
+    padding: 20px;
+}
+
+.items{
+    font-style: italic;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.imagenaptitudes{
+    width: 55%;
+}
+
+.principal{
+    background: #88ace2;
+    padding: 20px;
+    font-size: 20px;
+}
+
+em strong{
+    color: rgb(27, 120, 196);
+}
+
+.itemclass{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenaptitudes{
+    width: 45%;
+}
+
+.titulo-centralizado {
+    text-align: center;
+    font-size: 25px;
+}
+
+.nombre, .presentacion, .titulo-exper{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.exper{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+

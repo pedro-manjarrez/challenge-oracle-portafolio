@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="img/logoGpoli.png" width="25%" alt="Logo politecnico"></h1>
+            <nav>
+                <ul>
+                    <li><a href="sobremi.html">Acerca de mi</a></li>
+                    <li><a href="Principal.html">Portafolio</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>    
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <legend>!Para contactarme¡ </legend>
+            <legend>Favor de llenar el siguiente formulario</legend>
+            <br>
+            <!--Se agrega la palabra "required" indicar que el campo es requerido-->
+            <!--Se agrega la palabra "placehoder" indicar el formato de llenado-->
+            <label for="nombreapellido">Nombre y apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <!--Se modifica al type email relacionado al correo electronico (aroba)-->
+            <label for="correoelectronico">Coreo electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required 
+            placeholder="email@domiio.com">
+
+            <label for="asunto">Asunto</label>
+            <textarea cols="70" rows="3" id="mensaje" class="input-padron" required
+            placeholder="Asunto pòr el que montactas"></textarea>
+
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required
+            placeholder="Favor favor de proporcionar, correo, telefono, whatsup,etc"></textarea>
+
+            <fieldset>
+            <legend>¿Porque medio me contacto contigo?</legend>
+        
+            <!--Para que el boton de radio aparezca antes de la descripcion, 
+                se pone dentro del label-->
+            <label for="radio-email"><input type="radio" name="contacto" 
+                value="email" id="redio-email">eMail</label>
+            
+
+            <label for="radio-telefono"><input type="radio" name="contacto" 
+                value="email" id="radio-telefono">Telefono</label>
+            
+            <!--Se agrega la palabra "checked" para seleccionar por anticipado el boton-->    
+            <label for="radio-whatsapp"><input type="radio" name="contacto"
+                 value="email" id="radio-whatsapp" checked>WhatsApp</label>
+            
+
+            </fileset>
+            <br>            
+            <input type="submit" value="Enviar Mensaje" class="enviar">
+        
+        </form>
+
+        
+    </main>
+
+    <footer>
+        <img src="img/logopoliBlanco.png" alt="Logo Politecnico">
+        <p class="jpmp">&copy Copyright JPMP 2020</p>
+        <a href="https://github.com/pedro-manjarrez"><img src="img/github2.png"; width="2.5%"></a>
+    </footer>
+
+</body>
+</html>
+
